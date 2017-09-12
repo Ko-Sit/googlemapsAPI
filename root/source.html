@@ -5,14 +5,75 @@
     <title>Google Maps Presentation</title>
     <link href="css/style.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/icon.png" />
+    <script src="js/sidebar.js"></script>
     <script src="js/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCvx8JARPtOkTfG2nK1PH0wpgXId7Cfs8Q"
             type="text/javascript"></script>
 </head>
+
 <body>
+<div id="sidebar" class="w3-teal">
+    <button id="sidebarBtn" class="w3-button w3-teal w3-xlarge w3-left" onclick="toggleLeftMenu()">&#9776;</button>
+</div>
+<div id="map"></div>
 <div id="content">
-    <div id="map" style=""></div>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" id="leftMenu">
+        <br><br><br>
+        <select>
+            <option disabled selected hidden>Country</option>
+            <option>Belarus</option>
+            <option>Russia</option>
+            <option>France</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Period</option>
+            <option>2017-07-01</option>
+            <option>2017-08-31</option>
+            <option>2017-10-01</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Sales channel</option>
+            <option>On-trade</option>
+            <option>Off-trade</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Distributor</option>
+            <option></option>
+            <option></option>
+        </select>
+        <select>
+            <option disabled selected hidden>Retail trade</option>
+            <option>Evroopt</option>
+            <option>Prostor</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Brand</option>
+            <option>Lillet</option>
+            <option>Absolut</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Sale out</option>
+            <option></option>
+            <option></option>
+        </select>
+        <select>
+            <option disabled selected hidden>Sales agent</option>
+            <option>Petrov Dmitry</option>
+            <option>Ivanov Petr</option>
+            <option>Sidorov Ivan</option>
+        </select>
+        <select>
+            <option disabled selected hidden>Promotional sale</option>
+            <option>Petrov Dmitry</option>
+            <option>Ivanov Petr</option>
+            <option>Sidorov Ivan</option>
+        </select>
+    </div>
+
     <div id="storage">
+
         <table style="width:100%">
             <tr>
                 <th>Brand</th>

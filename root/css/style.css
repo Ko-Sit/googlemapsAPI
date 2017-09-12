@@ -32,10 +32,29 @@ body
 
 #map {
     position:absolute;
+    z-index: 1;
     top:0;
     left:0;
     width: 60%;
     height: 100%;
+}
+#sidebar {
+    position: relative;
+    z-index: 2;
+}
+
+#sidebarBtn {
+    position: relative;
+    z-index: 1;
+}
+
+#leftMenu {
+    display:none;
+
+}
+
+select {
+    width: 100%;
 }
 
 table {
@@ -43,7 +62,7 @@ table {
     width: 100%;
 }
 
-td, th {
+td, th, select {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 5px;
